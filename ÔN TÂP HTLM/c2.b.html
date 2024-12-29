@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #d9a8dc;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            margin: 0;
+            color: #8c088c;
+        }
+        .content {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 16px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 3px 2px #d12988;
+        }
+        .box__img {
+            width: 320px;
+            height: auto;
+            object-fit: contain;
+        }
+        .form-input {
+            padding: 10px 12px;
+            background-color: rgb(231, 196, 224);
+            border: 1px solid rgb(235, 180, 223);
+            margin: 5px 0;
+            border-radius: 5px;
+            outline: none;
+            min-width: 320px;
+        }
+        .text-area {
+            min-height: 40px;
+        }
+        button {
+            background-color: #9e0c9e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 348px;
+            padding: 10px 5px 10px 15px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box">
+            <img src="./email.png" alt class="box__img">
+            <div class="main">
+                <h2>Send us a message</h2>
+                <form action>
+                    <div><input type="text" placeholder="Enter your name" required class="form-input"></div>
+                    <div><input type="email" placeholder="Enter your email" required class="form-input"></div>
+                    <div><input type="text" placeholder="Enter your message" required class="form-input text-area"></textarea></div>
+                    <button>Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

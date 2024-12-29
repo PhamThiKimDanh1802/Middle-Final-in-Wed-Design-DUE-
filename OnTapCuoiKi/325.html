@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1,
+        h2,
+        p {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            display: flex;
+            width: 180px;
+            margin: 0 auto;
+        }
+
+        .lop {
+            display: flex;
+            justify-content: center;
+        }
+
+        .o {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            border: 10px solid black;
+            margin: 1px;
+            padding: 0 5px ;
+        }
+        @media screen and (max-width: 640px){
+            .lop{
+               flex-direction: column ;
+                justify-content: center;
+                margin: auto;
+            
+            }
+        }
+        @media screen and (min-width: 740px){
+            .o1{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                
+            }
+            .o2{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+            .o{
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+            }
+        }
+        @media screen and (min-width: 1040px){
+            .lop{
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>MobiFone</h1>
+    <p>
+        Là mạng viễn thông di động đầu tiên tại Việt Nam . Mobi được thành lập ngày 16/04/1993 với tên gọi ban đầu là Công ty thông tin di đọng (VMS) . Ngày 01/12/2014.Mobi được chuyển đổi thành Tổng công ty Viễn thông Mobi, thuộc Bộ Thông tin Và Truyenf thông.
+    </p>
+    <div class="lop">
+        <div class="o o1">
+            <h2>Sứ Mệnh</h2>
+            <br>
+            <img src="./do-uong-healthy-starbucks-2.jpg" alt="">
+            <br>
+            <p>Với Mobi sứ mệnh là không ngừng đổi mới , sáng tạo và tạo dựng hệ sinh thái số hoàn chỉnh , đáp ứng moinj nhu cầu , đánh thức mọi tìm năng đồng hành cùng người việt kiến tạo tương lai số , xã hội số và góp phần đưa việt nam trở thành quốc gia số </p>
+        </div>
+        <div class="o o2">
+            <h2>Định Hướng Hoạt Động</h2>
+            <br>
+            <img src="logo-starbucks.jpg" alt="">
+            <br>
+            <p>
+                Mobi duy trì là doanh nghiệp nhà nước chủ lực quốc gia và cung cấp các dịch vụ số , phát triển sịch vụ viễn thông di động sử dụng các công nghê nâng cấp ...
+            </p>
+        </div>
+        <div class="o o3">
+            <h2>Gía Trị Cốt Lõi</h2>
+            <br>
+            <img src="MIS-1.png" alt="">
+            <br>
+            <p>
+                Đứng trước bối cảnh mới với định hướng chuyển đổi số kinh doanh dịch vụ viễn thông trở thành nhà cung cấp hạ tầng số và dịch vụ sô tại Việt Nam , từng nfupowif mobi....
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+/* gg */
+
+* {
+    color: rgb(42, 126, 165);/* màu chữ*/
+    font-family: 'Times New Roman', Times, serif ; /* font chữ*/
+    font-size: 13px; /* size chữ*/
+    margin: 10px; /* căn dòng  nằm ngoài padding cách đều với những thẻ khác ;*/
+    padding: 5px;/* căn trái căn phải  */
+    box-sizing: border-box;
+    /* text-align: center; - căn chữ chính giữa */
+}

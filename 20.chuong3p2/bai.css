@@ -1,0 +1,26 @@
+.flex-chart-a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .bar {
+    width: 33%;
+    padding: 10px;
+  }
+  
+  .bar-34 {
+    
+    background-color: orange;
+  }
+  
+  .bar-33 {
+    
+    background-color: yellow;
+  }
+  
+  .bar-331 {
+    
+    background-color: purple;
+  }
+  

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #info {
+            margin-top: 10px;
+            color: darkviolet;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h3> Di chuyển chuột vao đoạn văn </h3>
+    <p onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">đây là môt đoạn văn bản . Hãy thử di chuột vào nó !</p>
+    <p id="info"></p>
+    <script>
+        function mouseEnter(){
+            document.getElementById('info').textContent= " bạn đan di chuột vào đoạn văn "
+        }
+        function mouseLeave(){
+            document.getElementById('info').textContent= " bạn đan di chuột ra ngoài đoạn văn "
+        }
+        
+    </script>
+</body>
+</html>

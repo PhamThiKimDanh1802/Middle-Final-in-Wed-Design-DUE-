@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto ;
+            gap: 20px;
+        }
+        .muc{
+            background-color: rgb(38, 87, 221);
+            border: 1px solid;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .mot{
+        grid-column: 1/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="muc mot">Mục 1</div>
+        <div class="muc hai">Mục 2</div>
+        <div class="muc ba">Mục 3</div>
+        <div class="muc bon">Mục 4</div>
+        <div class="muc nam">Mục 5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .product {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .rating {
+    color: #ffcc00;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .colors {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .color {
+    margin: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .product {
+      max-width: 500px;
+    }
+  }

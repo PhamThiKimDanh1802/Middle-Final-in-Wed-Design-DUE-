@@ -1,0 +1,60 @@
+@media screen and (max-width: 640px){
+    body{
+        background-color: orange;
+    }
+    .anh{
+
+        
+    }
+}
+@media screen and (min-width: 768px){
+    body{
+        background-color: blue;
+    }
+    .anh{
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 1040px){
+    body{
+        background-color: red;
+    }
+    .anh{
+        max-width: 100%;
+    }
+}
+.khung{
+    display: flex;
+    width: 100%;
+}
+.o{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.o1{
+    max-width: 30%; 
+    background-color: aqua;
+}
+.o2{
+    max-width: 10%; 
+    background-color: rebeccapurple;
+}
+.o3{
+    max-width: 60%; 
+    background-color: green;
+}
+
+
+
+
+.anh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+    padding: 100px 0;
+}
+
+

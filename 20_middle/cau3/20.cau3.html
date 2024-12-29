@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../chương4/1.js"></script>
+    <title>Form Nhập Thông Tin</title>
+    <style>
+            /* Äá»‹nh dáº¡ng body */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    /* Container cá»§a form */
+    .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        max-width: 600px;
+        box-sizing: border-box;
+    }
+
+    /* TiÃªu Ä‘á» cá»§a form */
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    /* Äá»‹nh dáº¡ng cÃ¡c nhÃ£n vÃ  input */
+    .form-group {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: left;
+        justify-content: space-between;
+    }
+
+    .form-group label {
+        font-weight: bold;
+        color: #555;
+        flex: 1;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        flex: 2;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    /* Äá»‹nh dáº¡ng cho nÃºt gá»­i */
+    .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #45a049;
+    }
+    @media screen and (min-width: 1024px) {
+        
+      }
+    @media screen and (max-width: 768px) {
+        .form-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: flex-start;
+        }
+      }
+    @media screen and (max-width: 414px) {
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+          }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: flex-start;
+        }
+        label{
+            display: none;
+        }
+      }
+
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Form Nhập Thông Tin</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="fullname">Họ Tên:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="nhập họ và tên" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Ngày Sinh:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Địa chỉ:</label>
+            <textarea id="address" name="address" rows="4" placeholder="Nhập địa chỉ của bạn " required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Gửi</button>
+    </form>
+</div>
+
+</body>
+</html>

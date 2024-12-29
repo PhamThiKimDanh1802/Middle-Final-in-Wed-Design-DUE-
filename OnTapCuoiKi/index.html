@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn tập thiết kế web</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--   -->
+    <H1>ÔN TẬP THIẾT KẾ WEB</H1>
+    <!--phần header -->
+    <head>
+        <nav>   <!--thẻ điểu huongwebsite -->
+            <a href="cstl.html">Cơ Sở Lập Trình </a>   <!-- thẻ chứa liên kết   -->
+            <a href="tkw.html">Thiết Kế Web</a>
+            <a href="ltw.html">Lập Trình Web</a>
+        </nav>
+    </head>
+    <main>  <!--thẻ dùng để chứa nd chính -->
+        <h2>Phần Chính Nội Dung</h2>
+        <p>Noi dung</p>   <!-- thẻ chứa văn bản  -->
+        <b>in đậm</b>
+        <strong>đánh dấu văn bản quan trọng + in đậm </strong>
+        <i>in nghiêng = thẻ em </i>
+        <u>Gạch chân = thẻ ins</u>
+        <sub>đẩy chữ xuống</sub>
+        <sup>đẩu chữ lên</sup>
+        <del>gạch ngang chữ</del>
+        <mark>làm nổi</mark><!-- bôi vàng  -->
+        <small>thu nhỏ chữ</small>
+        <img src="chứa liên kết ảnh" alt="mô tả">
+        <ul> <!-- thẻ tạo danh sách k đánh thứ tự  -->
+            <li>cơ sở lập trình</li>
+            <li>thiết kế web</li>
+        </ul>
+        <ol><!-- thẻ đánh số thứ tự -->
+            <li>cơ sở lập trình</li>
+            <li>thiết kế web</li>
+        </ol>
+    </main>
+    <!-- thẻ table  -->
+     <table border ="1px;" width="500px">
+        <caption>thẻ table</caption> <!-- hiện chính giữa bảng  -->
+        <tr>
+            <th colspan="7">tiêu đề</th><!-- colspan gộp cột  -->
+            <th>tiêu đề</th>
+            <th>tiêu đề</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Ô 1</td> <!-- rowspan gộp dòng  -->
+            <td>Ô 2</td>
+            <td>Ô 3</td>
+            <td>Ô 4</td>
+            <td>Ô 5</td>
+            <td>Ô 6</td>
+            <td>Ô 7</td>
+            <td>Ô 8</td>
+            <td>Ô 9</td>
+        </tr>
+        <tr>
+            <td>Ô 11</td>
+            <td>Ô 12</td>
+            <td>Ô 13</td>
+            <td>Ô 14</td>
+            <td>Ô 15</td>
+            <td>Ô 16</td>
+            <td>Ô 17</td>
+            <td>Ô 18</td>
+        </tr>
+     </table>
+     <br>
+     <!-- các nút lệnh  -->
+      <form method="post" action="/seatch">
+        <label for="nút 2">nhãn cho input </label><!--nhãn-->
+        <input type="text" value="để nhập " id="nút 2" name="nút 2"><!--nhập-->
+        <button name="nút 1">nút để bấm</button> <!--nhấn-->
+      </form>
+      <br>
+      <form action="">
+        <label for="nút 3">nhãn cho textarea</label>
+        <textarea name="nút 3" id="nút 3" rows="4" cols="50" minlength="10" maxlength="200"> </textarea>
+      </form>
+      <!--VỚI THẺ INPUT-->
+      <fieldset>
+      <legend>thẻ nhập văn bản</legend>
+      <input type="text"> để nhập chữ
+      <input type="button"> để nhấn = với nút button
+      <input type="submit"> để bấm nộp 
+      <input type="reset">reset
+      <input type="checkbox">check box - hình vuông select more in more
+      <input type="radio">radio - hình tròn select one in more
+      <input type="color">color -  chọn mầu
+      <input type="date-local">date <!--datetime/time/week/month cũng được nè-->
+      <input type="email">email
+      <input type="file">file - chọn file 
+      <input type="password"> nhập password
+      <input type="range">range - thanh kéo 
+      <input type="search"> thanh tìm kiếm 
+      <input type="tel">phone number - nhập số
+      <input type="number" min="0" max="10">chọn so 0-10>
+    </fieldset>
+    <fieldset>
+        <legend>thẻ datalist</legend>
+        <label for="browser">Choose from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br>
+        <label for="browser">chọn </label>
+        <select id="browsers">
+            <option value="cry">cry</option>
+            <option value="sad">sad</option>
+            <option value="other">other</option>
+            </select>
+    </fieldset>
+</body>
+</html>

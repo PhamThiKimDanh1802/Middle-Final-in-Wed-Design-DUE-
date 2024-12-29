@@ -1,0 +1,50 @@
+/*
+@media screen and(max-width:768px ) {
+     body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         background-color: aqua;
+    }  
+}
+@media screen and(min-width:768px ) {
+    body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}*/
+
+/*mobile*/
+ @media only screen and (max-width: 768px) {
+       body{
+          display: flex;
+          flex-direction: row;
+
+           grid-auto-rows: auto auto auto ;
+        }
+        .column{
+            display: flex;
+            flex-direction: column
+  
+    
+        } 
+      }
+    @media only screen and (min-width: 768px) {
+        main{
+          display: flex;
+            gap: 10px;
+            flex-wrap: wrap
+        }
+        
+        .column{
+            width: calc((100% / 3) - 10px);
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: flex-start;
+        }
+      }
+ 

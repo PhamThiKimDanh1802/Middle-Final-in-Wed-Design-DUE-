@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!--cách 1  -->
+    <p id="abc"> Nội dung sẽ đươc thay thế như này nè má </p>
+    <script>
+        document.getElementById("abc").innerHTML = " Ê Ê ê... !!!"
+    </script>
+    <!--cách 2
+    ❑ onclick : khi click lên đối tượng
+    ❑ onchange : khi giá trị thẻ thành phần của đối tượng được thay đổi
+    ❑ onmouseover : khi đưa chuột vào đối tượng
+    ❑ onmouseout : khi đưa chuột ra ngoài khỏi đối tượng
+    ❑ onkeydown : khi nhập dữ liệu vào textbox
+    ❑ onload : khi trang web được load lên  -->
+    <h3>Ê ê lắm nha</h3>
+    <button type="button" onclick="document.write('Nốt cái này tao đi ngủ ')"> nhấn đây đi má </button> <!-- nhấn vô-->
+    <br>
+    <br>
+    <br>
+    <img src="./meme.png" alt="" width="200px" onmouseover="document.write('Chưa chịu ngủ luôn hả má ')"><!-- đưa chuột vô-->
+    <br>
+    <br>
+    <input id="txt" onkeydown="document.getElementById('HienThi').innerHTML= document.getElementById('txt').value">
+    <p id="HienThi">Uừ thì ghi ở đây chứ ở đâu nữa</p>
+
+    <div>
+        <label for="ten">tên nè :</label>
+        <input id="ten" onkeydown="document.getElementById('tenne').innerHTML= document.getElementById('ten').value">
+        <p>tên: <span id="tenne">__________________</span></p>
+    </div>
+
+    <!--cách 3 : đặt code javascript trong hàm (Function) -->
+    <button onclick="hien()" style="background-color: rgb(222, 194, 239);"> nhấn cái là ngủ liền</button>
+    <p id="quatroihet">chưa nhấn nên không thấy đâu nha</p>
+    <script>
+    function hien(){
+        document.getElementById("quatroihet").innerHTML = Date();
+    }
+    </script>
+    <!--cách 4 : đặt code js  -->
+    
+</body>
+</html>
+
+
+

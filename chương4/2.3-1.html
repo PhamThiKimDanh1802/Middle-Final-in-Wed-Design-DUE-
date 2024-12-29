@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 80px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+        .output {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="form-group">
+                <label for="ten">Họ tên:</label>
+                <input id="ten" onkeydown="document.getElementById('tenne').innerHTML= document.getElementById('ten').value">
+            </div>
+            <div class="form-group">
+                <label for="ngay">Ngày sinh:</label>
+                <input id="ngay" onkeydown="document.getElementById('ngaysinh').innerHTML= document.getElementById('ngay').value">
+            </div>
+            <div class="form-group">
+                <label for="tinh">Giới tính:</label>
+                <input id="tinh" onkeydown="document.getElementById('gioitinh').innerHTML= document.getElementById('tinh').value">
+            </div>
+        </div>
+        <div>
+            <p><b>Họ tên:</b> <span class="output" id="tenne">__________________</span></p>
+            <p><b>Ngày sinh:</b> <span class="output" id="ngaysinh">__________________</span></p>
+            <p><b>Giới tính:</b> <span class="output" id="gioitinh">__________________</span></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    font-family: Verdana;
+    font-size: 16pt;
+    text-align: center;
+}
+h2 {
+    color: blue;
+}
+p {
+    color: red;
+}
+img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid blue;
+}

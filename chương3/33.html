@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid; /* mỗi dòng mỗi ô*/
+            grid-template-columns: auto auto auto ; /*chia cột tự động căn đều */
+            grid-template-rows: auto auto auto auto; /*chia cột tự động căn đều */
+            column-gap: 10px; /* khổng trống cột*/
+            row-gap: 10px;   /* khổng trống dòng , nếu cả dòng và cột thì dùng gap*/
+            grid-template-areas:'item1 a a a a item2'
+                                'item3 a a a a item4'
+                                'item5 a a a a item6'
+                                'item7 a a a a item9'
+                                'item10 item11 item12 item13 item14 item15';
+            }
+            .item8 {
+                grid-area: a; /* có thế viết cách khác ngoài item */
+            }
+        .grid-item {
+            background-color: #008cff;
+            border: 1px solid; /* kẻ ô */
+            padding: 10px;
+            font-size: 20px;
+            text-align: center
+            }
+        .item1 {
+                grid-column: 1; /* (1/3) gộp cột từ cạnh 1 và kết thức ở cạnh 3 :gộp 2 ô */
+            } 
+        .item4 {
+                grid-row: 2; /*(2/4)mở rộng oo4 bằng cách gộp từ cạnh 2 đến 4*/
+        } 
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+        <div class="grid-item item6">6</div>
+        <div class="grid-item item7">7</div>
+        <div class="grid-item item8">8</div>
+        <div class="grid-item item9">9</div>
+        <div class="grid-item item10">10</div>
+        <div class="grid-item item10">11</div>
+        <div class="grid-item item10">12</div>
+        <div class="grid-item item10">13</div>
+        <div class="grid-item item10">14</div>
+        <div class="grid-item item10">15</div>
+        </div>
+</body>
+</html>

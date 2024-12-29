@@ -1,0 +1,13 @@
+
+/*nhúng thẻ css vào html bằng cách:
+<link rel="stylesheet" href="TEENFZFFILE.CSS>"*/
+
+fieldset{
+    color: rgb(34, 96, 184);
+}
+label{
+    color: brown;
+}
+h1{color: blue;background-color: aquamarine;
+
+}

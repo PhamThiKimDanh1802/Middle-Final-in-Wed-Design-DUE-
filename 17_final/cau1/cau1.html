@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17.cau1</title>
+    <link rel="stylesheet" href="./cau1.css">
+</head>
+
+<body>
+    <div class="khoichinh">
+        <div class="bentrai">
+            <img src="./img/event.jpg" alt="event">
+        </div>
+        <div class="benphai">
+            <form action="login.aspx" method="post">
+                <div class="tieude"> <b> ĐĂNG KÝ THAM DỰ SỰ KÝ THAM DỰ SỰ KIỆN</b></div>
+                <div> </div><br>
+                <div>
+                    <lable for="text">Họ tên </lable>
+                    <input type="text" placeholder="Nhập họ và tên" required="">
+                </div>
+                <div>
+                    <lable>Giới tính</lable>
+                    <input type="radio" name="Nam">Nam
+                    <input type="radio" name="Nu">Nữ
+                </div>
+                <div>
+                    <lable>Số điện thoại</lable>
+                    <input type="tel" placeholder="nhập số diện thoại">
+                </div>
+                <div>
+                    <label for="emanil">Email</label>
+                    <input type="email" placeholder="Nhập email" required="">
+                </div>
+                <div>
+                    <label for="">Ngày tham gia</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="browser">Loại vé </label>
+                        <select id="browsers">
+                            <option value="VIP">VIP</option>
+                            <option value="THUONG">Thuong</option>
+                            <option value="sinhvien">sinhvien</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div>
+                    <form action="">
+                        <label for="n3">Lời nhắn đến ban tổ chức </label>
+                        <textarea name="n3" id="nút 3" rows="4" cols="50" minlength="10" maxlength="200"> </textarea>
+                    </form>
+                </div>
+                <button>Đăng ký </button>
+                <br>
+                <button type="reset">Xóa</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  h2{
+    text-align: left;
+  }
+  
+  .product {
+    padding: 20px;
+  }
+  
+  .rating {
+    color: darkgrey;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .danhgia{ color: black;
+
+  }
+  b{
+    text-align: left;
+  }
+  
+  .colors {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .color {
+    margin: 10px;
+    border-radius: 5px;
+  
+  }
+  .xanh{
+    margin:auto;
+    padding:auto;
+  }
+  
+  @media (min-width: 768px) {
+    .product {
+      max-width: 500px;
+    }
+  }

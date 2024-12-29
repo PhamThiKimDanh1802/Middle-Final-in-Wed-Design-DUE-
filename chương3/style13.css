@@ -1,0 +1,16 @@
+body {
+    font-family: Arial;
+    font-size: 12pt;
+    text-align: justify;
+}
+.highlight-red {
+    color: red;
+    font-weight: bold;
+}
+.italic {
+    font-style: italic; color: blue;
+}
+.underline-purple {
+    color: purple;
+    text-decoration: underline;
+}

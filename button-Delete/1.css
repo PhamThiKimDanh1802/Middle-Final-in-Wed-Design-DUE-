@@ -1,0 +1,32 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    font-family: "Inter", Arial;
+    justify-content: center;
+    align-self: center;
+    background: #97a7e3;
+}
+.button{
+    --background : #275EFE;
+    --background-hover : #5b7ce1 ; 
+    --text : #ffff;
+    --icon:#ffff;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    padding: 9px 20px 9px 12px ;
+    border-radius: 11px;
+    line-height: 24px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    overflow: hidden;
+    color: var(--text);
+    background: var(--b, var(--background));
+    transition: transform 0.3s, background o.4s;
+    transform: scale(var(--scale,1)) translateZ(0);
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent ;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}

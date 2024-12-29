@@ -1,0 +1,19 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items : center ;
+    height:700px;
+
+}
+.box {
+    background-color: orangered;
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    }
+.box1{order: 1;}
+.box2{order: 2;}
+    

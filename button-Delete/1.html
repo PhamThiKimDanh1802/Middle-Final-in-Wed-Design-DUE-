@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            min-height: 1vh;
+            display: flex;
+            font-family: "Inter", Arial;
+            justify-content: center;
+            align-self: center;
+            background: #97a7e3;
+            padding: 100px;
+        }
+        .button{
+            --background : #275EFE;
+            --background-hover : #5b7ce1 ; 
+            --text : #ffff;
+            --icon:#ffff;
+            display: flex;
+            outline: none;
+            cursor: pointer;
+            border: 0;
+            padding: 9px 20px 9px 12px ;
+            border-radius: 11px;
+            line-height: 24px;
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 14px;
+            overflow: hidden;
+            color: var(--text);
+            background: var(--b, var(--background));
+            transition: transform 0.3s, background 0.4s;
+            transform: scale(var(--scale,1)) translateZ(0);
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent ;
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
+        }
+    </style>
+</head>
+<body>
+    <button class="button">
+        <i class="fas fa-trash"></i> 
+        Delete
+    </button>
+</body>
+</html>

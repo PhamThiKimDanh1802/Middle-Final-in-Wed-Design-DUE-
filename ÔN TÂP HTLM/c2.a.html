@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#D1E8FF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        }
+        .khoichinh{
+            display: flex;
+            background-color: white;
+            margin: 13% 10%;
+            border-radius: 10px;
+            box-shadow:   0 2px 3px 2px #AAA;
+        }
+        .benphai{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+        .bentrai{
+            width: 60%;
+            text-align: center;
+            padding: 8% 0;
+        }
+        input{
+            border: none;
+            color:#636C72;
+            background-color:aliceblue;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            width: 430px;
+            padding: 13px 5px 13px 15px;
+        }
+        .ip3{
+            padding-bottom: 50px;
+        }
+        .tieude{
+            color: #2470C2;
+            font-size: 25px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        button{
+            background-color: #2470C2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 450px;
+            padding: 10px 5px 10px 15px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="khoichinh">
+        <div class="bentrai">
+            <img src="./lo.png" alt="">
+        </div>
+        <div class="benphai">
+            <form action="login.aspx" method="post">
+                <div class="tieude"> <b> Send us a message</b></div>
+                <div><input type="text" placeholder="Enter your name" required=""></div>
+                <div><input type="email" placeholder="Enter your email" required=""></div>
+                <div><input class="ip3" type="text" placeholder="Enter your message" required=""></div>
+                <button>Send Message</button>
+             </form>
+        </div>
+    </div>
+</body>
+</html>

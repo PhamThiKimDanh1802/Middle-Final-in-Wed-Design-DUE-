@@ -1,0 +1,18 @@
+body {
+    background-color: #FFF5EE;
+}
+.title {
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+}
+ol {
+    list-style-position: inside;
+}
+li {
+    color: green;
+    border: 2px dashed teal;
+    padding: 5px;
+    margin: 5px 0;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị thành phố</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .city-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .city-list li {
+            margin: 10px 0;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .display {
+            width: 300px;
+            text-align: center;
+            border: 3px solid transparent;
+            padding: 10px;
+        }
+        .display img {
+            width: 100%;
+            height: auto;
+        }
+        .display.active {
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul class="city-list">
+        <li onmouseover="showCity('Hà Nội', '/img/hanoi.png')">Hà Nội</li>
+        <li onmouseover="showCity('Huế', '/img/hue.png')">Huế</li>
+        <li onmouseover="showCity('Đà Nẵng', '/img/danang.pn/')">Đà Nẵng</li>
+        <li onmouseover="showCity('TP. HCM', '/img/tphcm.png')">TP. HCM</li>
+    </ul>
+    <div class="display" id="display">
+        <img id="cityImage" src="" alt="City Image">
+        <p id="cityName">Di chuột lên tên thành phố</p>
+    </div>
+
+    <script>
+        function showCity(name, imageSrc) {
+            const displayDiv = document.getElementById('display');
+            const cityImage = document.getElementById('cityImage');
+            const cityName = document.getElementById('cityName');
+
+            // Cập nhật hình ảnh và tên
+            cityImage.src = imageSrc;
+            cityName.textContent = name;
+
+            // Thêm viền xanh khi hover
+            displayDiv.classList.add('active');
+        }
+    </script>
+</body>
+</html>

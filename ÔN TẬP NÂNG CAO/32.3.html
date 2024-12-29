@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #7ab7cb;
+            padding: 10px;
+          }
+          
+          .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+          
+          .navbar li {
+            margin: 0 10px;
+          }
+          
+          /* Media queries để điều chỉnh cho các kích thước màn hình khác nhau */
+          @media (max-width: 768px) {
+            .navbar ul {
+              flex-direction: column;
+            }
+          }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.delete-button {
+    /* Styles for the button */
+    position: relative;
+  }
+  
+  .delete-text {
+    position: absolute;
+    transition: all 0.3s ease; /* Thời gian chuyển động */
+  }
+  
+  .trash-icon {
+    /* Styles for the trash icon */
+    position: absolute;
+    right: 10px; /* Vị trí của icon thùng rác */
+  }
+  
+  /* Tạo hiệu ứng di chuyển khi hover */
+  .delete-button:hover .delete-text {
+    transform: translateX(-50px); /* Di chuyển chữ sang trái */
+  }
